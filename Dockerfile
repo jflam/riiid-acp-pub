@@ -11,5 +11,11 @@ USER ${CONTAINER_USER}
 RUN conda init && \
     exec bash
 
+# Copy environment.yml into the container and create the environment
+WORKDIR /home/${CONTAINER_USER}
+COPY --chown=${CONTAINER_USER}:${CONTAINER_USER} environment.yml \
+     /home/${CONTAINER_USER}/environment.yml
+RUN conda env create -v -f environment.yml
+
 WORKDIR /home/${CONTAINER_USER}/repo
 CMD [ "jupyter", "notebook", "--no-browser", "--ip", "0.0.0.0" ]
