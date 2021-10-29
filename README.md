@@ -20,6 +20,24 @@ git clone https://github.com/jamarju/riiid-acp-pub
 mkdir input
 ```
 
+## Downloading the dataset
+
+1. Make sure you setup a `~/.kaggle/kaggle.json` file that contains the
+   credentials that are needed to connect to kaggle. You can create and
+   download this from Kaggle by clicking on your user profile directory and
+   selecting Account and clicking on `Create New API Token` button which will
+   download a `kaggle.json` file to your machine. Make sure you copy it to
+   `~/.kaggle/kaggle.json`
+1. Once you have the file setup on the machine, you'll need to download the 
+   data files for the competition:
+
+   `kaggle competitions download -c riiid-test-answer-prediction`
+
+   The files are quite large - 1.29GB
+1. Unzip them and copy them into Azure Storage
+
+ASIDE: I wonder how cheap it would be to use R2 to store these datafiles?
+
 Unzip the dataset into `input` or just copy over the required files:
 
 * `train.csv`
