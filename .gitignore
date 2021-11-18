@@ -6,3 +6,5 @@
 /kaggle_dataset/to_upload
 /02_train.py
 .vscode
+.devcontainer
+.devcontainer/devcontainer.json
