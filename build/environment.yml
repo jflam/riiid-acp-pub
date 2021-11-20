@@ -1,10 +1,6 @@
 name: riiid-acp
 channels:
-  - anaconda
   - fastchan
-  - conda-forge
-  - defaults
 
 dependencies:
-  - fastai=2.1.7=py_0
-  - pytorch-block-sparse==0.1.2
+  - fastai
