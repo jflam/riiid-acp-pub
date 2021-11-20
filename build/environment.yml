@@ -4,3 +4,5 @@ channels:
 
 dependencies:
   - fastai
+  - pip:
+    - pytorch-block-sparse==0.1.2
