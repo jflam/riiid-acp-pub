@@ -1,7 +1,0 @@
-name: riiid-acp
-channels:
-  - fastchan
-
-dependencies:
-  - pip:
-    - pytorch-block-sparse==0.1.2
