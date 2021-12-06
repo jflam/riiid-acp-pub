@@ -1,6 +1,6 @@
 {
     "requires_gpu": "true",
-    "base_container_image": "fastdotai/fastai:latest",
+    "base_container_image": "ubuntu:20.04",
     "runArgs": [
         "--gpus=all",
         "--ipc=host"
