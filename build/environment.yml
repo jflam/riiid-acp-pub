@@ -199,6 +199,7 @@ dependencies:
     - future==0.18.2
     - kaggle==1.5.10
     - python-slugify==4.0.1
+    - pytorch-block-sparse==0.1.2
     - pytorch-fast-transformers==0.3.0
     - slugify==0.0.1
     - text-unidecode==1.3
