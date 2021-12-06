@@ -1,6 +1,6 @@
 {
     "requires_gpu": "true",
-    "base_container_image": "nvidia/cuda:11.4.2-runtime-ubuntu20.04",
+    "base_container_image": "nvidia/cuda:11.4.2-devel-ubuntu20.04",
     "runArgs": [
         "--gpus=all",
         "--ipc=host"
